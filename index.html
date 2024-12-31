@@ -12,16 +12,16 @@
   <p id="result" style="font-size: 18px; color:blue;"></p>
     <script>
       const pi=3.14159;
-      function CalanddisplayArea(){
-        let radiusInput = document.getElementById("radius").value;
-        let radius = parseFloat(radiusInput);
-        fuction calculateArea(radius){
-          if(radius<0){
-            return "Radius cannot be Negitive";
+          fuction calculateArea(radius){
+                   if(radius<0){
+                       return "Radius cannot be Negitive";
           }
-         else
             return pi*radius*radius;
         }
+      function CalanddisplayArea(){
+        let radiusInput = document.getElementById("radius").value;
+        let radius = parseFloat(radiusInput)
+          
         let area = calculateArea(radius);
           document.getElementById("result").textcontent= `The area of a circle with radius  ${radius} is ${area.toFixed(2)}.`;
       }

@@ -23,7 +23,11 @@
         let radius = parseFloat(radiusInput)
           
         let area = calculateArea(radius);
+        if(typeofarea ==="string"{
+          document.getElementById("result").textcontent=area;
+        }else{
           document.getElementById("result").textcontent= `The area of a circle with radius  ${radius} is ${area.toFixed(2)}.`;
+      }
       }
     </script>
 </body>
